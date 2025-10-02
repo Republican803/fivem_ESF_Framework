@@ -1,0 +1,56 @@
+{
+    "LOS_SANTOS_URBAN_CORE": {
+        "poly": [[-500, -1500], [500, -1500], [500, -500], [-500, -500]],
+        "primary": ["LSPD", "LSFD", "LSEMS"],
+        "secondary": ["LSCSO"],
+        "hotspotDensity": 0.3
+    },
+    "LOS_SANTOS_SUBURBS": {
+        "poly": [[-1000, -2500], [1000, -2500], [1000, -1500], [-1000, -1500]],
+        "primary": ["LSCSO", "LSFD", "LSEMS"],
+        "secondary": ["LSPD"],
+        "hotspotDensity": 0.2
+    },
+    "SOUTH_LS_INDUSTRIAL_PORT": {
+        "poly": [[-500, -3000], [500, -3000], [500, -2500], [-500, -2500]],
+        "primary": ["LSPA", "LSIAFD", "LSEMS"],
+        "secondary": ["LSCSO"],
+        "hotspotDensity": 0.2
+    },
+    "LSIA_AIRPORT": {
+        "poly": [[-1500, -3500], [-1000, -3500], [-1000, -3000], [-1500, -3000]],
+        "primary": ["LSIAPD", "LSIAFD", "LSEMS"],
+        "secondary": null,
+        "hotspotDensity": 0.15
+    },
+    "BLAINE_COUNTY_RURAL": {
+        "poly": [[0, 0], [3000, 0], [3000, 3000], [0, 3000]],
+        "primary": ["BCSO", "BCFD", "BCEMS"],
+        "secondary": ["SSPD"],
+        "hotspotDensity": 0.1
+    },
+    "SANDY_SHORES": {
+        "poly": [[1500, 1500], [2000, 1500], [2000, 2500], [1500, 2500]],
+        "primary": ["SSPD", "BCFD", "BCEMS"],
+        "secondary": ["BCSO"],
+        "hotspotDensity": 0.15
+    },
+    "PALETO_BAY_NORTH": {
+        "poly": [[-500, 5500], [500, 5500], [500, 7000], [-500, 7000]],
+        "primary": ["PBPD", "PBFD", "PBEMS"],
+        "secondary": ["BCSO"],
+        "hotspotDensity": 0.1
+    },
+    "HIGHWAYS_INTERSTATES": {
+        "poly": [[-3000, -3500], [3000, -3500], [3000, 7000], [-3000, 7000]],
+        "primary": ["SAST", "LSFD", "LSEMS"],
+        "secondary": null,
+        "hotspotDensity": 0.25
+    },
+    "STATE_WATERS_WILDERNESS": {
+        "poly": [[-4000, -4000], [4000, -4000], [4000, 8000], [-4000, 8000]],
+        "primary": ["SAGW", "BCFD", "BCEMS"],
+        "secondary": null,
+        "hotspotDensity": 0.05
+    }
+}

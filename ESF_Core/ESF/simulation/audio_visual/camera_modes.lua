@@ -1,0 +1,1 @@
+-- Dash cam recording (placeholder: Log client-side screenshots or video export hook)

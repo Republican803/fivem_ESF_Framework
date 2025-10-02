@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MDT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mdt-container" class="hidden">
+        <div id="boot-screen" class="hidden">Loading CAD System...</div>
+        <div id="tabs">
+            <button onclick="switchTab('active-calls')">Active Calls</button>
+            <button onclick="switchTab('unit-status')">Unit Status</button>
+            <button onclick="switchTab('database')">Database</button>
+            <button onclick="switchTab('radio-log')">Radio Log</button>
+            <button onclick="switchTab('settings')">Settings</button>
+        </div>
+        <div id="content">
+            <div id="active-calls" class="tab-content">
+                <input type="text" placeholder="Search Calls..." oninput="searchCalls(this.value)">
+                <ul id="calls-list"></ul>
+            </div>
+            <div id="unit-status" class="tab-content hidden">
+                <button onclick="updateStatus('10-8')">10-8 Available</button>
+                <button onclick="updateStatus('10-97')">10-97 En Route</button>
+                <button onclick="updateStatus('10-6')">10-6 Busy</button>
+                <div id="units-map"></div>
+                <ul id="units-list"></ul>
+            </div>
+            <div id="database" class="tab-content hidden">
+                <select id="query-type">
+                    <option value="plate">Run Plate</option>
+                    <option value="warrant">Check Warrants</option>
+                    <option value="bolo">View BOLOs</option>
+                </select>
+                <input type="text" id="query-input" placeholder="Enter Plate/ID">
+                <button onclick="runQuery()">Query</button>
+                <div id="query-result"></div>
+            </div>
+            <div id="radio-log" class="tab-content hidden">
+                <ul id="radio-messages"></ul>
+                <input type="text" id="radio-input" placeholder="Type message...">
+                <button onclick="sendRadio()">Send</button>
+            </div>
+            <div id="settings" class="tab-content hidden">
+                <!-- Settings content -->
+            </div>
+        </div>
+        <div id="alert-popup" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

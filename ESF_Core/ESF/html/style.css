@@ -1,0 +1,43 @@
+body {
+    background: black;
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+#mdt-container {
+    position: absolute;
+    top: 10%; left: 10%;
+    width: 80%; height: 80%;
+    border: 2px solid limegreen;
+    padding: 10px;
+}
+
+#boot-screen {
+    animation: bootAnim 2s;
+}
+
+@keyframes bootAnim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.tab-content {display: none;}
+.tab-content.active {display: block;}
+
+#alert-popup {
+    position: fixed;
+    top: 20%; left: 40%;
+    background: red;
+    color: white;
+    padding: 10px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    50% {opacity: 0.5;}
+}
+
+.police {color: blue;}
+.fire {color: red;}
+.ems {color: white;}

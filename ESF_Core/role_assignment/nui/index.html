@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agency Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <h1 id="title">Emergency Services Onboarding</h1>
+        <input type="text" id="charName" placeholder="Character Name" style="display: none;">
+        <select id="roleSelect">
+            <option value="">Select Role</option>
+            <option value="Police">Police</option>
+            <option value="EMS">EMS</option>
+            <option value="Fire">Fire</option>
+        </select>
+        <select id="agencySelect" disabled>
+            <option value="">Select Agency</option>
+        </select>
+        <p id="agencyDesc"></p>
+        <button id="submitBtn">Submit</button>
+        <button id="closeBtn">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

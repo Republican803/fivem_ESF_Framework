@@ -1,0 +1,29 @@
+{
+  "eventPools": {
+    "Police": {
+      "Pursuit": {"probability": 0.15, "description": "Fleeing suspect in vehicle"},
+      "Fight": {"probability": 0.25, "description": "PED brawl"},
+      "Burglary": {"probability": 0.20, "description": "Break-in at building"}
+    },
+    "EMS": {
+      "Injury": {"probability": 0.30, "description": "PED fall or accident"},
+      "Overdose": {"probability": 0.15, "description": "Drug-related medical"},
+      "Cardiac": {"probability": 0.25, "description": "Heart attack"}
+    },
+    "Fire": {
+      "Blaze": {"probability": 0.20, "description": "Structure fire"},
+      "VehicleFire": {"probability": 0.15, "description": "Burning car"},
+      "Rescue": {"probability": 0.20, "description": "Trapped PED"}
+    }
+  },
+  "baseSpawnInterval": 60000,  // ms between checks
+  "commonChance": 0.7,
+  "rareChance": 0.1,
+  "modifiers": {
+    "rain": {"Accident": 1.2, "Fire": 0.8},  // Boost accidents, reduce fires
+    "night": {"Burglary": 1.5, "Pursuit": 1.2},  // Night: 20:00-06:00
+    "urban": {"Fight": 1.3, "Overdose": 1.2}  // Dense zones
+  },
+  "maxActiveEvents": 5,
+  "escalationTime": 300000  // 5 mins to escalate if ignored
+}
